@@ -21,9 +21,9 @@ and then paste the following
 	fetch="https://github.com/" />
 
 <project path="device/motorola/rhodei"
-	name="moto-rhodei/twrp_device_motorola_rhodei"
+	name="abkdmn-ng/twrp_rhodei"
 	remote="github"
-	revision="android-12.1" />
+	revision="main" />
 </manifest>
 ```
 You might need to pick few patches from gerrit.twrp.me to get some stuff working.
