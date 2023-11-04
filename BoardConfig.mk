@@ -54,8 +54,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
 BOARD_SUPER_PARTITION_SIZE := 8613003264
-BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 4302307328 # BOARD_SUPER_PARTITION_SIZE/2 - 4MB
+BOARD_SUPER_PARTITION_GROUPS := motorola_dynamic_partitions
+bOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 4302307328 # BOARD_SUPER_PARTITION_SIZE/2 - 4MB
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext vendor
 
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -110,9 +110,7 @@ TW_INCLUDE_CRYPTO := true
 TW_NO_EXFAT_FUSE := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
-#TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko mmi_relay.ko moto_f_usbnet.ko wl2864c.ko exfat.ko mmi_annotate.ko mmi_sc8549.ko qpnp_adaptive_charge.ko wl2866d.ko focaltech_v2_mmi.ko mmi_info.ko mmi-smbcharger-iio.ko sensors_class.ko goodix_v1510_mmi.ko mmi_parallel_charger_iio.ko mmi_sys_temp.ko touchscreen_mmi.ko"
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko mmi-smbcharger-iio.ko exfat.ko mmi_sys_temp.ko focaltech_v2_mmi.ko moto_f_usbnet.ko ili9882_mmi.ko nova_0flash_mmi.ko qpnp_adaptive_charge.ko mmi_annotate.ko sensors_class.ko mmi_info.ko mmi_parallel_charger_iio.ko wl2864c.ko mmi_relay.ko wl2866d.ko mmi_sc8549.ko"
-
+TW_LOAD_VENDOR_MODULES := "adapter_class.ko mmi_annotate.ko mmi_sys_temp.ko sm5602_fg_mmi.ko adsp_loader_dlkm.ko mmi_charger.ko moto_f_usbnet.ko tcpc_class.ko bq2589x_charger.ko mmi_discrete_charger_class.ko modules.blocklist qpnp_adaptive_charge.ko tcpc_sgm7220.ko cw2217b_fg_mmi.ko mmi_discrete_charger.ko rt_pd_manager.ko wl2868c.ko exfat.ko mmi_info.ko sgm4154x_charger.ko"
 # TWRP-debug
 TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
