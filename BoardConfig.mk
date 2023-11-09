@@ -31,7 +31,7 @@ TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 
 # Platform
 TARGET_BOARD_PLATFORM := holi
@@ -114,7 +114,7 @@ TW_Y_OFFSET := 115
 TW_NO_EXFAT_FUSE := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko goodix_v1510_mmi.ko mmi_info.ko mmi_sys_temp.ko sgm4154x_charger.ko wl2868c.ko bq2589x_charger.ko ili9882_mmi.ko mmi_parallel_charger_iio.ko moto_f_usbnet.ko sm5602_fg_mmi.ko cw2217b_fg_mmi.ko mmi_relay.ko nova_0flash_mmi.ko touchscreen_mmi.ko exfat.ko mmi_sc8549.ko qpnp_adaptive_charge.ko wl2864c.ko focaltech_v2_mmi.ko mmi_annotate.ko mmi-smbcharger-iio.ko sensors_class.ko wl2866d.ko"
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko goodix_v1510_mmi.ko mmi_info.ko mmi_sys_temp.ko sgm4154x_charger.ko wl2868c.ko bq2589x_charger.ko ili9882_mmi.ko mmi_parallel_charger_iio.ko moto_f_usbnet.ko sm5602_fg_mmi.ko cw2217b_fg_mmi.ko mmi_relay.ko nova_0flash_mmi.ko exfat.ko mmi_sc8549.ko qpnp_adaptive_charge.ko wl2864c.ko mmi_annotate.ko mmi-smbcharger-iio.ko sensors_class.ko wl2866d.ko"
 
 # TWRP-debug
 TARGET_USES_LOGD := true
