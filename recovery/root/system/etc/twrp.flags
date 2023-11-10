@@ -1,5 +1,3 @@
-# mount point           fstype            device                                        flags
-
 /boot                   emmc            /dev/block/bootdevice/by-name/boot              flags=slotselect;backup=1;flashimg=1
 /dtbo                   emmc            /dev/block/bootdevice/by-name/dtbo              flags=slotselect;backup=1;flashimg=1
 /fsg                    emmc            /dev/block/bootdevice/by-name/fsg               flags=slotselect;backup=1;flashimg=1
