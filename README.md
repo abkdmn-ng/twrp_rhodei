@@ -74,3 +74,8 @@ Front Camera | 16 MP, f/2.2, (wide), 1.0µm
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+```
+## Status
+```
+AS OF 2023-11-14 twrp hasn't booted properly
